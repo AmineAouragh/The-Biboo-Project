@@ -8,17 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication
-public class BibooApplication {
+public class BibooApplicationEntryPoint {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(BibooApplication.class, args);
+		SpringApplication.run(BibooApplicationEntryPoint.class, args);
 
-	}
-
-	@GetMapping("/books")
-	public String books(@RequestParam(value="book", defaultValue="Miss Peregrine") String book) {
-		return String.format("Hello %s!", book);
 	}
 
 }
