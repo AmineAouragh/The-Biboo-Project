@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="flex w-full h-full items-center justify-center text-xl font-bold">
       Welcome To Biboo App - The Ultimate Playground For Book Lovers
     </div>
   );
