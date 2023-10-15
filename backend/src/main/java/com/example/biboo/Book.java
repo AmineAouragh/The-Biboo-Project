@@ -3,10 +3,10 @@ package com.example.biboo;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Entity;
-
-import javax.annotation.processing.Generated;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "books")
 public class Book {
 
     @Id
