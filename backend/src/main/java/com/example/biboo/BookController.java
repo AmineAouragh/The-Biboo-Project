@@ -17,9 +17,14 @@ public class BookController {
         this.bookRepository = bookRepository;
     }
 
-    @GetMapping("/my-books")
+    @GetMapping("/books-details")
     public List<Book> getAllBooks(){
-        return bookRepository.findAll();
+        return bookRepository.findAllBooks();
+    }
+
+    @GetMapping("/my-book")
+    public Book getBookByTitle() {
+        return bookRepository.findBookByTitle("");
     }
 
     @PostMapping("/add-new-book")
